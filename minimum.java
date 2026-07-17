@@ -5,9 +5,7 @@ public class minimum{
     static long minimumCost(int[] packages) {
 
         int n = packages.length;
-
         long handling = 0;
-
         for (int x : packages)
             handling += x;
 
