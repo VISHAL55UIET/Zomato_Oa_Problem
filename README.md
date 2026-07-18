@@ -35,6 +35,8 @@ I aspire to work at **Zomato** as a Software Engineer. This repository is part o
 | # | Problem | Status |
 |---|---------|--------|
 | 1 | Minimum Cost to Clear Packages | ✅ Solved |
+| 2 | String Game CodeForces 778A | ✅ Solved |
+| 3 |  MaxPoint on a line leetcode 143 | ✅ Solved |
 
 More OA problems will be added regularly.
 
