@@ -5,8 +5,7 @@ public class Direction {
         if (!sc.hasNextInt()) return;
         int maxNorth = sc.nextInt();
         int maxEast = sc.nextInt();
-        int xp = sc.nextInt();
-        int yp = sc.nextInt();
+        int xp = sc.nextInt(),yp = sc.nextInt();
         int k = sc.nextInt();
         int distN = maxNorth - yp;
         int distS = yp - 1;
