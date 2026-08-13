@@ -1,9 +1,9 @@
 
 public class Longest_Substring_one_Repeating_Charcater {
 
-    static class Solution {
+   public static class Solution {
 
-        static class Node {
+      public  static class Node {
             int len, pref, suff, best;
             char left, right;
             Node(int len, int pref, int suff, int best, char left, char right) {
@@ -41,10 +41,7 @@ public class Longest_Substring_one_Repeating_Charcater {
             int mid = (l + r) >> 1;
             build(u << 1, l, mid);
             build(u << 1 | 1, mid + 1, r);
-            tree[u] = merge(
-                    tree[u << 1],
-                    tree[u << 1 | 1]
-            );
+            tree[u] = merge(tree[u << 1],tree[u << 1 | 1]);
         }
         void update(int u, int l, int r, int pos, char c) {
             if (l == r) {s[pos] = c;
@@ -55,7 +52,7 @@ public class Longest_Substring_one_Repeating_Charcater {
             if (pos <= mid) {
                 update(u << 1, l, mid, pos, c);
             } else
-                update(u << 1 | 1, mid + 1, r, pos, c);
+            update(u << 1 | 1, mid + 1, r, pos, c);
             tree[u] = merge(tree[u << 1],tree[u << 1 | 1]
             );
         }
@@ -64,7 +61,6 @@ public class Longest_Substring_one_Repeating_Charcater {
                 String queryCharacters,
                 int[] queryIndices
         ) {
-
             this.s = s.toCharArray();
             int n = s.length();
             tree = new Node[4 * n];
