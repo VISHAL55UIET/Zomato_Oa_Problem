@@ -1,45 +1,34 @@
 # 🍽️ Zomato OA Solutions
 
-This repository contains my solutions to **Zomato Online Assessment (OA)** coding problems that I solve during my Software Engineering interview preparation.
+A curated collection of **Zomato Online Assessment (OA) coding problems** solved during my Software Engineering interview preparation.
 
-The goal of this repository is to maintain a collection of optimized solutions, explain the underlying intuition, and document different problem-solving approaches.
+This repository focuses on writing **optimized, production-quality Java solutions**, along with clear problem-solving approaches, complexity analysis, and implementation details.
 
-## 📌 Repository Contents
-
-- ✅ Java Solutions
-- ✅ Optimized Approaches
-- ✅ Time & Space Complexity
-- ✅ Dry Runs and Explanations (where applicable)
-- ✅ OA-specific Problems
-
-## 📂 Folder Structure
-
-```
-Zomato_OA_Problem/
-│
-├── MinimumCost.java
-├── README.md
-└── ...
-```
-
-## 🚀 Language
-
-- Java
-
-## 🎯 Purpose
-
-I aspire to work at **Zomato** as a Software Engineer. This repository is part of my interview preparation journey, where I consistently solve and document Zomato Online Assessment problems.
-
-## 📈 Progress
-
-| # | Problem | Status |
-|---|---------|--------|
-| 1 | Minimum Cost to Clear Packages | ✅ Solved |
-| 2 | String Game CodeForces 778A | ✅ Solved |
-| 3 |  MaxPoint on a line leetcode 143 | ✅ Solved |
-
-More OA problems will be added regularly.
+The goal is to build a structured repository that demonstrates strong **Data Structures & Algorithms, problem-solving, optimization, and competitive programming skills**.
 
 ---
 
-⭐ If you find this repository helpful, feel free to star it.
+## 📌 Repository Highlights
+
+- 💻 **Java-based solutions**
+- ⚡ Optimized algorithms and data structures
+- 🧠 Problem-solving intuition and approach
+- 📊 Time & Space Complexity analysis
+- 🔍 Dry runs and edge-case analysis
+- 🎯 Zomato OA-focused problems
+- 📈 Continuously expanding problem collection
+- 🧹 Clean and readable implementations
+
+---
+
+## 📂 Repository Structure
+
+```text
+Zomato_OA_Problem/
+│
+├── MinimumCost.java
+├── StringGame_778A.java
+├── MaxPointOnALine_149.java
+├── Longest_Substring_one_Repeating_Charcater.java
+├── README.md
+└── ...
