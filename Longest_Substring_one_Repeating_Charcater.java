@@ -82,8 +82,8 @@ public class Longest_Substring_one_Repeating_Charcater {
     public static void main(String[] args) {
         Solution solution = new Solution();
         String s = "abbccc";
-        String queryCharacters = "dde";
-        int[] queryIndices = {1, 3, 5};
+        String queryCharacters = "ede";
+        int[] queryIndices = {5,3,1};
         int[] result = solution.longestRepeating(s,queryCharacters,queryIndices);
         System.out.println("Output:");
         for(int x : result)System.out.print(x + " ");
