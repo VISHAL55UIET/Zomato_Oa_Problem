@@ -1,37 +1,29 @@
 import java.util.*;
 
 public class PrimeFraction {
-
-    static class Solution {
-
+    public static class Solution {
         class Pair {
             int i, j;
-
             Pair(int i, int j) {
                 this.i = i;
-                this.j = j;
+                this.j = j;  
             }
         }
-
         public int[] kthSmallestPrimeFraction(int[] arr, int k) {
             int n = arr.length;
-
             PriorityQueue<Pair> pq = new PriorityQueue<>(
                 (a, b) -> Integer.compare(
                     arr[a.i] * arr[b.j],
                     arr[b.i] * arr[a.j]
                 )
             );
-
             // Start with 1/arr[j]
             for (int j = 1; j < n; j++) {
                 pq.offer(new Pair(0, j));
             }
-
             // Find kth smallest fraction
             while (--k > 0) {
                 Pair cur = pq.poll();
-
                 if (cur.i + 1 < cur.j) {
                     pq.offer(new Pair(cur.i + 1, cur.j));
                 }
@@ -45,37 +37,21 @@ public class PrimeFraction {
             };
         }
     }
-
     public static void main(String[] args) {
-
         Scanner sc = new Scanner(System.in);
-
         // Input n
         System.out.print("Enter size of array: ");
         int n = sc.nextInt();
-
         // Input array
         int[] arr = new int[n];
-
         System.out.println("Enter array elements:");
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-
-        // Input k
         System.out.print("Enter k: ");
         int k = sc.nextInt();
-
-        // Create Solution object
         Solution sol = new Solution();
-
-        // Get answer
         int[] ans = sol.kthSmallestPrimeFraction(arr, k);
-
-        // Print answer
-        System.out.println("Kth smallest prime fraction: "
-                + ans[0] + "/" + ans[1]);
-
-        sc.close();
+        System.out.println("Kth smallest prime fraction: "+ ans[0] + "/" + ans[1]);
     }
 }

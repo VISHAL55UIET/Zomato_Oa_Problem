@@ -1,9 +1,8 @@
-
 public class Longest_Substring_one_Repeating_Charcater {
    public static class Solution {
       public  static class Node {
             int len, pref, suff, best;
-            char left, right;
+            char left,right;
             Node(int len, int pref, int suff, int best, char left, char right) {
                 this.len = len;
                 this.pref = pref;
@@ -75,6 +74,6 @@ public class Longest_Substring_one_Repeating_Charcater {
         int[] queryIndices = {5,3,1};
         int[] result = solution.longestRepeating(s,queryCharacters,queryIndices);
         System.out.println("Output:");
-        for(int x : result)System.out.print(x + " ");
+        for(int x : result)System.out.print(x + " ");  
     }
 }
