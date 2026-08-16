@@ -27,14 +27,9 @@ public class Direction {
                 }
             }
         }
-        int totalVicinity = Math.max(0, distN) 
-                          + Math.max(0, distS) 
-                          + Math.max(0, distE) 
-                          + Math.max(0, distW);
-                          
+        int totalVicinity = Math.max(0, distN)+ Math.max(0, distS) + Math.max(0, distE)+ Math.max(0, distW);     
         System.out.println(totalVicinity);
-        
-        sc.close();
+
     }
 
 }
