@@ -13,17 +13,17 @@ public class Direction {
         int distW = xp - 1;
         for (int i = 0; i < k; i++) {
             int bx = sc.nextInt(),by = sc.nextInt();
-            if (bx == xp) { 
-                if (by > yp) {
-                    distN = Math.min(distN, by - yp - 1);
-                } else if (by < yp) { 
-                    distS = Math.min(distS, yp - by - 1);
+            if (bx == xp){ 
+                if(by > yp){
+                distN = Math.min(distN, by - yp - 1);
+                }else if(by < yp){ 
+                distS = Math.min(distS, yp - by - 1);
                 }
-            } else if (by == yp) { 
-                if (bx > xp) { 
-                    distE = Math.min(distE, bx - xp - 1);
-                } else if (bx < xp) { 
-                    distW = Math.min(distW, xp - bx - 1);
+            }else if(by == yp){ 
+                if(bx > xp){ 
+                distE = Math.min(distE, bx - xp - 1);
+                }else if (bx < xp){ 
+                distW = Math.min(distW, xp - bx - 1);
                 }
             }
         }
