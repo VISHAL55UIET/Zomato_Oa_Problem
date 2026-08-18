@@ -46,9 +46,11 @@ public class Longest_Substring_one_Repeating_Charcater {
             int mid = (l + r) >> 1;
             if (pos <= mid) {
                 update(u << 1, l, mid, pos, c);
-            }else
+            }else {
             update(u << 1 | 1, mid + 1, r, pos, c);
+
             tree[u] = merge(tree[u << 1],tree[u << 1 | 1]);
+            }
         }
         public int[] longestRepeating(String s,String queryCharacters,int[] queryIndices){
             this.s = s.toCharArray();
