@@ -20,10 +20,8 @@ public class Longest_Substring_one_Repeating_Charcater {
             Node res = new Node(a.len + b.len,a.pref,b.suff,Math.max(a.best, b.best),a.left,b.right);
             if (a.right == b.left) {
                 res.best = Math.max(res.best,a.suff + b.pref);
-                if (a.pref == a.len) {
-                    res.pref = a.len + b.pref;
-                }
-                if (b.suff == b.len) {
+                if(a.pref == a.len) res.pref = a.len + b.pref;
+                if(b.suff == b.len) {
                     res.suff = b.len + a.suff;
                 }
             }
