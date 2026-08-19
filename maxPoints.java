@@ -4,9 +4,7 @@ class maxPoints{
     public int maxPoints(int[][] points) {
         int n = points.length;
         if (n <= 2) return n;
-
         int result = 2;
-
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
                 int count = 2;
@@ -29,7 +27,6 @@ class maxPoints{
 
         return result;
     }
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
