@@ -16,8 +16,8 @@ class maxPoints{
                     if (k == i || k == j) continue;
                     int x3 = points[k][0];
                     int y3 = points[k][1];
-                    if ((y2 - y1) * (x3 - x1) == (y3 - y1) * (x2 - x1)) {
-                        count++;
+                    if ((y2 - y1)*(x3 - x1) == (y3 - y1) * (x2 - x1)) {
+                        count++;  //  increment count if the point lies on the line formed by points
                     }
                 }
 
