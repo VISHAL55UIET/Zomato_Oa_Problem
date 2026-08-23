@@ -66,8 +66,7 @@ public class Longest_Substring_one_Repeating_Charcater {
             return ans;
         }
     }
-
-    public static void main(String[] args) {
+        public static void main(String[] args) {
         Solution solution = new Solution();
         String s = "abbccc";
         String queryCharacters = "ede";
