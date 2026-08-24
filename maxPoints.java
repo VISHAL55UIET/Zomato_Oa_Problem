@@ -24,7 +24,6 @@ class maxPoints{
                 result = Math.max(result, count);
             }
         }
-
         return result;
     }
     public static void main(String[] args) {
