@@ -40,9 +40,7 @@ class GCD{
         int[] result = new int[queries.length];
         for (int q = 0; q < queries.length; q++) { // O(Q * log(maxVal))
             long idx = queries[q];
-            int l = 1;
-            int r = maxVal;
-            int temp = 1;
+            int l = 1,r = maxVal,temp = 1;
             while (l <= r) {
                 int mid_gcd = l + (r - l) / 2;
                 if (prefixCountGcd[mid_gcd] > idx) {

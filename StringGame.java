@@ -10,12 +10,12 @@ public class StringGame{
         }
         int j = 0;
         for (int i = 0; i < t.length() && j < p.length(); i++) {
-            if (removed[i]) continue;
+            if(removed[i]) continue;
             if (t.charAt(i) == p.charAt(j)) {
                 j++;
             }
         }
-        return j == p.length();
+        return j == p.length(); // j== nums.length()
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
