@@ -1,9 +1,9 @@
 import java.util.*;
 
 public class StringGame{
-    static String t, p;
-    static int[] order;
-    static boolean check(int k) {
+   public static String t, p;
+    public static int[] order;
+   public  static boolean check(int k) {
         boolean[] removed = new boolean[t.length()];
         for (int i = 0; i < k; i++) {
             removed[order[i] - 1] = true;
