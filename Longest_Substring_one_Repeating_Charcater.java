@@ -47,7 +47,7 @@ public class Longest_Substring_one_Repeating_Charcater {
             if (pos <= mid) {
                 update(u << 1, l, mid, pos, c);
             }else {
-            update(u << 1 | 1, mid + 1, r, pos, c);
+            update(u << 1|1, mid + 1, r, pos, c);
 
             tree[u] = merge(tree[u << 1],tree[u << 1 | 1]);
             }
