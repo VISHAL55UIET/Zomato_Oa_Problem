@@ -5,20 +5,20 @@
 
 //S.C : O(M), M = maxVal
 class GCD{
-    public int[] gcdValues(int[] nums, long[] queries) {
+    public int[] gcdValues(int[] nums, long[] queries){
         int n = nums.length;
         int maxVal = 0;
-        for (int num : nums) {
-            maxVal = Math.max(maxVal, num);
+        for (int num : nums){
+            maxVal = Math.max(maxVal,num);
         }
         int[] divisorFreq = new int[maxVal + 1];
         for (int i = 0; i < n; i++) { // N*sqrt(maxVal)
             int num = nums[i]; // 36
-            for (int j = 1; (long) j * j <= num; j++) {
+            for (int j = 1; (long)j*j <= num; j++) {
                 if (num % j == 0) {
                     divisorFreq[j]++;
-                    if (num / j != j) {
-                        divisorFreq[num / j]++;
+                    if (num/j!=j) {
+                        divisorFreq[num/j]++;
                     }
                 }
             }
@@ -39,15 +39,15 @@ class GCD{
         }
         int[] result = new int[queries.length];
         for (int q = 0; q < queries.length; q++) { // O(Q * log(maxVal))
-            long idx = queries[q];
-            int l = 1,r = maxVal,temp = 1;
-            while (l <= r) {
-                int mid_gcd = l + (r - l) / 2;
-                if (prefixCountGcd[mid_gcd] > idx) {
-                    temp = mid_gcd;
-                    r = mid_gcd - 1;
+            long idx =queries[q];
+            int l = 1,r =maxVal,temp = 1;
+            while (l <= r){
+                int mid_gcd =l + (r - l)/2;
+                if (prefixCountGcd[mid_gcd]>idx) {
+                    temp=mid_gcd;
+                    r=mid_gcd - 1;
                 } else {
-                    l = mid_gcd + 1;
+                    l=mid_gcd + 1;
                 }
             }
             result[q] = temp;
