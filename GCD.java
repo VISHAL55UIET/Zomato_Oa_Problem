@@ -6,7 +6,7 @@
 //S.C : O(M), M = maxVal
 class GCD{
     public int[] gcdValues(int[] nums, long[] queries){
-        int n = nums.length;
+        int n =nums.length;
         int maxVal = 0;
         for (int num : nums){
             maxVal = Math.max(maxVal,num);
