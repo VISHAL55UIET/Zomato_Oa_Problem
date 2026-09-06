@@ -14,8 +14,7 @@ class shortest_word_distances {
             String word2 = query.get(1);
             List<Integer> a = map.get(word1);
             List<Integer> b = map.get(word2);
-            int i = 0;
-            int j = 0;
+            int i = 0,j = 0;
             int min = Integer.MAX_VALUE;
             while (i < a.size() && j < b.size()) {
                 min = Math.min(min, Math.abs(a.get(i) - b.get(j)));
