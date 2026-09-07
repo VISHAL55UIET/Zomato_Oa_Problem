@@ -9,18 +9,18 @@ class shortest_word_distances {
             map.computeIfAbsent(word.get(i), k -> new ArrayList<>()).add(i);
         }
         List<Integer> ans = new ArrayList<>();
-        for (List<String> query : queries) {
+        for (List<String>query : queries) {
             String word1 = query.get(0);
             String word2 = query.get(1);
-            List<Integer> a = map.get(word1);
-            List<Integer> b = map.get(word2);
+            List<Integer>a = map.get(word1);
+            List<Integer>b = map.get(word2);
             int i = 0,j = 0;
             int min = Integer.MAX_VALUE;
-            while (i < a.size() && j < b.size()) {
-                min = Math.min(min, Math.abs(a.get(i) - b.get(j)));
-                if (a.get(i) < b.get(j)) {
+            while (i< a.size() &&j < b.size()) {
+                min = Math.min(min, Math.abs(a.get(i)- b.get(j)));
+                if (a.get(i)< b.get(j)) {
                     i++;
-                } else {
+                } else{
                     j++;
                 }
             }
