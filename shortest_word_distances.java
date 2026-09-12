@@ -11,7 +11,7 @@ class shortest_word_distances {
         List<Integer> ans = new ArrayList<>();
         for (List<String>query : queries) {
             String word1 = query.get(0);
-            String word2 = query.get(1);
+            String word2= query.get(1);
             List<Integer>a = map.get(word1);
             List<Integer>b = map.get(word2);
             int i = 0,j = 0;
