@@ -24,10 +24,8 @@ class shortest_word_distances {
                     j++;
                 }
             }
-
             ans.add(min);
         }
-
         return ans;
     }
 
