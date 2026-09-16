@@ -13,7 +13,7 @@ class GCD{
         }
         int[] divisorFreq = new int[maxVal + 1];
         for (int i = 0; i < n; i++) { // N*sqrt(maxVal)
-            int num = nums[i]; // 36
+            int num = nums[i];
             for (int j = 1; (long)j*j <= num; j++) {
                 if (num % j == 0) {
                     divisorFreq[j]++;
