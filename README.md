@@ -4,7 +4,7 @@ A curated collection of **Zomato Online Assessment (OA) coding problems** solved
 
 This repository focuses on writing **optimized, production-quality Java solutions**, along with clear problem-solving approaches, complexity analysis, and implementation details.
 
-The goal is to build a structured repository that demonstrates strong **Data Structures & Algorithms, problem-solving, optimization, and competitive programming skills**.
+The goal is to build a structured repository that demonstrates strong  **Data Structures & Algorithms, problem-solving, optimization, and competitive programming skills**.
 
 ---
 
