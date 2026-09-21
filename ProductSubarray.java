@@ -22,8 +22,8 @@ public class ProductSubarray {
         return res;
     }
     public static void main(String[] args) {
-        int[] nums = {2, 3, 4};
-        int k = 5;
+        int[] nums = {1,2,3,4,5};
+        int k = 3;
         long[] ans = resultArray(nums, k);
         System.out.println(Arrays.toString(ans));
     }
