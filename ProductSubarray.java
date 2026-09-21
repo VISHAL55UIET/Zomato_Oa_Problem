@@ -14,7 +14,6 @@ public class ProductSubarray {
                 int newRem = (int) ((long) oldRem * nums[i] % k);
                 currCount[newRem] += prevCount[oldRem];
             }
-
             prevCount = currCount;
             for (int x = 0; x < k; x++) {
                 res[x] += prevCount[x];
@@ -22,12 +21,10 @@ public class ProductSubarray {
         }
         return res;
     }
-
     public static void main(String[] args) {
         int[] nums = {2, 3, 4};
         int k = 5;
         long[] ans = resultArray(nums, k);
-
         System.out.println(Arrays.toString(ans));
     }
 }
