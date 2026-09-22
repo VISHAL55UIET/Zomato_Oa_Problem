@@ -106,11 +106,7 @@ public class SegmentTreeProductQueries {
 
         Solution sol = new Solution();
 
-        // =====================================================
-        // TEST CASE 1
-        // =====================================================
-
-        int[] nums1 = {1, 2, 3, 4, 5};
+        int[] nums1 = {6,7,8,9,10};
 
         int k1 = 3;
 
@@ -124,7 +120,7 @@ public class SegmentTreeProductQueries {
 
         System.out.println("Test Case 1:");
         System.out.println(Arrays.toString(result1));
-        int[] nums2 = {2, 4, 6, 8};
+        int[] nums2 = {1,2,3,4};
 
         int k2 = 2;
 
