@@ -111,19 +111,16 @@ public class SegmentTreeProductQueries {
         int k1 = 3;
 
         int[][] queries1 = {
-            {0, 6, 0, 0},
+            {0, 6, 3, 2},
             {2, 5, 1, 2},
             {4, 3, 2, 1}
         };
 
         int[] result1 = sol.resultArray(nums1, k1, queries1);
-
         System.out.println("Test Case 1:");
         System.out.println(Arrays.toString(result1));
-        int[] nums2 = {1,2,3,4};
-
+        int[] nums2 = {6,7,8,9};
         int k2 = 2;
-
         int[][] queries2 = {
             {1, 3, 0, 0},
             {3, 5, 1, 1}
