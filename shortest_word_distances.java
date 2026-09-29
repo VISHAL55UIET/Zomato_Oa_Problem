@@ -8,7 +8,7 @@ class shortest_word_distances {
         for (int i = 0; i < word.size(); i++) {
             map.computeIfAbsent(word.get(i), k -> new ArrayList<>()).add(i);
         }
-        List<Integer> ans = new ArrayList<>();
+        List<Integer> ans = new ArrayList<>();  //
         for (List<String>query : queries) {
             String word1 = query.get(0);
             String word2= query.get(1);
