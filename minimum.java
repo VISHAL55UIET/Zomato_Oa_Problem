@@ -6,15 +6,14 @@ public class minimum{
         long handling = 0;
         for (int x : packages)
             handling += x;
-        long leftTravel = 0;
-        long suffixMax = 0;
+        long leftTravel = 0,suffixMax = 0;
         for (int i = n - 1; i >= 0; i--) {
             suffixMax = Math.max(suffixMax, packages[i]);
             leftTravel += suffixMax;
         }
         long rightTravel = 0;
         long prefixMax = 0;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0;i< n;i++) {
             prefixMax = Math.max(prefixMax, packages[i]);
             rightTravel += prefixMax;
         }
