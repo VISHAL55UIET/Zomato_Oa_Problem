@@ -113,7 +113,7 @@ public class SegmentTreeProductQueries {
         int[][] queries1 = {
             {0, 6, 3, 2},
             {2, 5, 1, 2},
-            {4, 3, 2, 1}
+            {1, 2, 3, 4}
         };
 
         int[] result1 = sol.resultArray(nums1, k1, queries1);
