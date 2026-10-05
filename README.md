@@ -11,7 +11,7 @@ The goal is to build a structured repository that demonstrates strong  **Data St
 ## 📌 Repository Highlights
 
 - 💻 **Java-based solutions**
-- ⚡ Optimized algorithms and data structures
+- ⚡ Optimized algorithms and and data structures
 - 🧠 Problem-solving intuition and approach
 - 📊 Time & Space Complexity analysis
 - 🔍 Dry runs and edge-case analysis
