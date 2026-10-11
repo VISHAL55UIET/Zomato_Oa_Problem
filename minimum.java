@@ -5,7 +5,7 @@ public class minimum{
         int n = packages.length;
         long handling = 0;
         for (int x : packages)
-            handling += x;
+            handling += x;    
         long leftTravel = 0,suffixMax = 0;
         for (int i = n - 1; i >= 0; i--) {
             suffixMax = Math.max(suffixMax, packages[i]);
@@ -23,8 +23,7 @@ public class minimum{
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] packages = new int[n];
-        for (int i = 0; i < n; i++)
-            packages[i] = sc.nextInt();
-        System.out.println(minimumCost(packages));
+        for (int i = 0; i < n; i++)packages[i] = sc.nextInt();
+        System.out.println(minimumCost(packages));        
     }
 }

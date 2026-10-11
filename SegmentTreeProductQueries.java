@@ -106,7 +106,7 @@ public class SegmentTreeProductQueries {
 
         Solution sol = new Solution();
 
-        int[] nums1 = {6,7,8,9,10};
+        int[] nums1 = {5,6,7,8,9};
 
         int k1 = 3;
 
