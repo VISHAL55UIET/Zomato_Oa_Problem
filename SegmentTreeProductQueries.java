@@ -111,7 +111,7 @@ public class SegmentTreeProductQueries {
         int k1 = 3;
 
         int[][] queries1 = {
-            {0, 6, 3, 2},
+            {2,3,0,6},
             {2, 5, 1, 2},
             {1, 2, 3, 4}
         };
